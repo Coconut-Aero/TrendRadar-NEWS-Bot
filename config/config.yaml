@@ -103,7 +103,15 @@ rss:
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false                  # 禁用
+    
+    - id: "govhk-ticker"
+      name: "香港政府新闻快讯"
+      url: "https://www.news.gov.hk/tc/common/html/ticker.rss.xml"
+
+    - id: "govhk-ticker"
+      name: "香港政府教育新闻"
+      url: "https://www.news.gov.hk/tc/categories/school_work/html/articlelist.rss.xml"
+
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -132,7 +140,7 @@ rss:
 #    • 适用场景：避免重复信息干扰
 # ===============================================================
 report:
-  mode: "current"                     # 可选: daily | current | incremental
+  mode: "daily"                     # 可选: daily | current | incremental
   display_mode: "keyword"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
                                       # platform: 按平台/来源分组显示
